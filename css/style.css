@@ -1,0 +1,180 @@
+[v-cloak] {
+  display: none;
+}
+
+html {
+  height: 100%;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+html body .container {
+  height: 100%;
+  background: url("../images/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+html body .container .title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 44px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+  padding-top: 30px;
+}
+
+@media (max-width: 420px) {
+  html body .container .title {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    text-align: center;
+  }
+}
+
+html body .container .center-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 63%;
+}
+
+html body .container .center-wrapper .form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 19px 42px;
+  border-radius: 20px;
+  max-width: 320px;
+  width: 100%;
+}
+
+@media (max-width: 420px) {
+  html body .container .center-wrapper .form {
+    padding: 19px 21px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+html body .container .center-wrapper .form .form-group, html body .container .center-wrapper .form label, html body .container .center-wrapper .form input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+html body .container .center-wrapper .form .action-btns, html body .container .center-wrapper .form .action-btns .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .container .center-wrapper .form .action-btns .btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2BA3D7;
+  border-radius: 12px;
+  height: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+html body .container .center-wrapper .form .action-btns .btn img {
+  -webkit-margin-start: 5px;
+          margin-inline-start: 5px;
+}
+
+html body .container .center-wrapper .form .action-btns .btn img.goto-img, html body .container .center-wrapper .form .action-btns .btn img.share-img {
+  margin-bottom: 2px;
+}
+
+html body .container .center-wrapper .form input, html body .container .center-wrapper .form .button, html body .container .center-wrapper .form .form-control {
+  height: 43px;
+  border-radius: 9px;
+}
+
+html body .container .center-wrapper .form .icon {
+  position: relative;
+  top: 2px;
+}
+
+html body .container .center-wrapper .form label {
+  color: #555555;
+  font-size: 18px;
+}
+
+html body .container .center-wrapper .form input, html body .container .center-wrapper .form .form-control {
+  border: 1px solid gray;
+  outline: none;
+  -webkit-padding-start: 8px;
+          padding-inline-start: 8px;
+  background: #f8f9fa;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 2.5;
+  font-size: 15px;
+}
+
+html body .container .center-wrapper .form input.focused_url, html body .container .center-wrapper .form input.focused_alias {
+  background: #ffff;
+}
+
+html body .container .center-wrapper .form .button {
+  text-align: center;
+  background: mediumpurple;
+  line-height: 2.5;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+html body .container .center-wrapper .form a.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+html body .container .center-wrapper .form .red {
+  border: 1px solid red !important;
+  -webkit-box-shadow: 0 0 0 0.15rem rgba(255, 0, 0, 0.2) !important;
+  box-shadow: 0 0 0 0.15rem rgba(255, 0, 0, 0.2) !important;
+}
+
+html body .container .center-wrapper .form .text-danger {
+  color: red;
+  -webkit-padding-start: 4px;
+          padding-inline-start: 4px;
+}
+/*# sourceMappingURL=style.css.map */
