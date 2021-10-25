@@ -43,6 +43,14 @@ class Short {
     $shortCode = $this->urlExistDB($url);    
 
     if(!$shortCode && $alias){
+
+      //@TODO - CHECK REGEX FO ALIAS ^([a-zA-Z0-9]+)/?$
+      if(!preg_match('/^([a-zA-Z0-9]+)?$/', $alias)){
+        throw new Exception("Invalid alias - use letters and numbers only");
+        die;
+      }
+
+
       $existAlias = $this->aliaslExistDB($alias);
       
       if(!$existAlias){

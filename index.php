@@ -1,6 +1,6 @@
 <?php
 
-$BASE_URL = 'http://localhost/shortURL/';
+$BASE_URL = 'https://www.shortit.cloud/';
 
 if(!isset($_GET['u']) || empty($_GET['u'])){
   header("Location: app");

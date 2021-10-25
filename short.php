@@ -22,8 +22,9 @@
   // $shortURL_Prefix = 'https://xyz.com/'; // with URL rewrite
   // $shortURL_Prefix = 'https://xyz.com/?u='; // without URL rewrite
 
-  $shortURL_Prefix = 'http://localhost/shortURL?u='; // without URL rewrite
-
+  // $shortURL_Prefix = 'https://shortit.cloud/?u='; 
+  $shortURL_Prefix = 'https://shortit.cloud/';
+  
   try{
 
     $short_code = $short->urlToShort($long_URL, $alias);

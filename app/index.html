@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://www.shortit.cloud/css/style.css">
   <title>Short it!</title>
-  <link rel="shortcut icon" type="image/jpg" href="../images/favico.png"/>
+  <link rel="shortcut icon" type="image/jpg" href="https://www.shortit.cloud/images/favico.png"/>
 </head>
 <body>
   <div class="container">
@@ -17,7 +17,7 @@
       <div class="form" v-if="form" v-cloak>
 
           <div class="form-group">
-            <img class="icon" height="18" width="18" src="../images/link_icon.png"/>
+            <img class="icon" height="18" width="18" src="https://www.shortit.cloud/images/link_icon.png"/>
             <label for="">
               Enter long URL
             </label>
@@ -26,7 +26,7 @@
           </div>
 
           <div class="form-group">
-            <img class="icon" height="18" width="18" src="../images/edit_icon.png"/>
+            <img class="icon" height="18" width="18" src="https://www.shortit.cloud/images/edit_icon.png"/>
             <label for="">Choose Alias</label>
             <input type="text" name="alias" id="alias"  v-model="alias" :class="{'red': errMsgAlias}"  @focus="focused_alias = true, focused_url = false" :class="{ 'focused_alias': focused_alias }">
             <small v-if="errMsgAlias" :class="{'text-danger': errMsgAlias}" v-cloak>{{ errMsgAlias}}</small>
@@ -39,7 +39,7 @@
           <div class="form-group">
             <div class="button" @click.prevent="handler('url')">
                <span v-if="btnText" v-cloak>SHORT IT!</span>
-               <span v-if="loader" v-cloak><img src="../images/loader.gif" width="40" height="40"></span>
+               <span v-if="loader" v-cloak><img src="https://www.shortit.cloud/images/loader.gif" width="40" height="40"></span>
             </div>
         </div>  
 
@@ -50,7 +50,7 @@
       <div class="form" v-if="after" v-cloak>
 
         <div class="form-group">
-          <img class="icon" height="18" width="18" src="../images/link_icon.png"/>
+          <img class="icon" height="18" width="18" src="https://www.shortit.cloud/images/link_icon.png"/>
           <label for="">
             Your long URL
           </label>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="form-group">
-          <img class="icon" height="18" width="18" src="../images/edit_icon.png"/>
+          <img class="icon" height="18" width="18" src="https://www.shortit.cloud/images/edit_icon.png"/>
           <label for="">Short URL</label>
           <input type="text" readonly="readonly" v-model="shortURL" ref="textToCopy">       
         </div>   
@@ -66,15 +66,15 @@
         <div class="form-group action-btns">
           <div class="btn" @click="copyURL"> 
               <span>Copy</span>
-              <img src="../images/copy_white.png" alt="Copy url" width="20" height="20" class="copy-img">                  
+              <img src="https://www.shortit.cloud/images/copy_white.png" alt="Copy url" width="20" height="20" class="copy-img">                  
           </div>
           <div class="btn" @click="redirectURL"> 
             <span>Go To</span>           
-            <img src="../images/goto.png" alt="redirect to url" width="20" height="20" class="goto-img">       
+            <img src="https://www.shortit.cloud/images/goto.png" alt="redirect to url" width="20" height="20" class="goto-img">       
           </div>
           <div class="btn" @click="shareWhatsapp">     
             <span>Share</span> 
-            <img src="../images/whats.png" alt="Share url" width="22" height="22" class="share-img">              
+            <img src="https://www.shortit.cloud/images/whats.png" alt="Share url" width="22" height="22" class="share-img">              
           </div>
       </div>  
 
@@ -93,8 +93,8 @@
     <!--- end container---->
   </div>
 
-  <script src="../js/vue.js"></script>
-  <script src="../js/axios.js"></script>  
-  <script src="../js/validation.js"></script>
+  <script src="https://www.shortit.cloud/js/vue.js"></script>
+  <script src="https://www.shortit.cloud/js/axios.js"></script>  
+  <script src="https://www.shortit.cloud/js/validation.js"></script>
 </body>
 </html>

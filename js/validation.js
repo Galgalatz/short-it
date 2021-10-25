@@ -12,7 +12,7 @@ app = new Vue({
     form: true,
     after: false,
     shortURL: '',
-    base: "/shortURL/",
+    base: "https://shortit.cloud/",
     focused_url: false,
     focused_alias: false,    
   },
@@ -55,8 +55,8 @@ app = new Vue({
     },
 
     redirectURL: function(){
-      window.location.href = this.shortURL;
-      // window.open();      
+      // window.location.href = this.shortURL;
+      window.open(this.shortURL);      
     },
 
     shareWhatsapp: function(){
